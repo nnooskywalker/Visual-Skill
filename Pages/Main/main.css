@@ -1,0 +1,497 @@
+.header-container{
+    display: grid;
+    gap: 2rem;
+}
+
+.header-img img{
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header-content h1{
+    margin-bottom: 1rem;
+    font-size: 4.25rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    line-height: 5rem;
+    color: var(--text-dark);
+}
+
+.header-content p{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--text-light);
+}
+
+.header-content .btn{
+    padding: .75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.companies-text{
+    display: flex;
+    justify-content: center;
+
+}
+
+.companies-text h3{
+    color: var(--text-dark);
+}
+
+.carousel{
+    margin: 20px auto;
+    width: 90%;
+    /* border: 5px solid red; */
+    display:flex;
+    overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 40s infinite linear;
+    padding-right: 1em;
+}
+
+.carousel:hover .group{
+    animation-play-state: paused;
+}
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    /* background: cornflowerblue; */
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.courses{
+    background-color: whitesmoke;
+    padding: 5rem 1rem;
+}
+
+.rating i{
+    color: #f59e0b;
+    margin-right: 4px;
+}
+
+.students i{
+    margin-right: 4px;
+}
+
+.courses-header{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.courses-header h2{
+    font-size: 2.6rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses-header p{
+    color: var(--text-light);
+    font-size: 1.05rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.courses-header i{
+    color: var(--secondary-color);
+}
+
+.course-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+.course-card{
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+}
+
+.course-card::before{
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg,#f54725,#f9d678);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.course-card:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.course-card .btn{
+    background: var(--secondary-color);
+    color: white;
+}
+
+.course-card .btn:hover{
+    opacity: 0.9;
+}
+
+.course-info{
+    padding: 1.5rem;
+}
+
+.course-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-desc .ri-user-line{
+    color: var(--text-light);
+}
+
+.course-info h3{
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.course-info p{
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.course-card img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.promo{
+    background: var(--primary-color);
+    padding-inline: 5rem 1rem;
+
+}
+
+.ri-wallet-3-line{
+    color: brown;
+}
+
+.btn.current-plan{
+    background-color: #d1d5db;
+    color: #374151;
+    cursor: default;
+}
+
+.btn.current-plan:hover{
+    background-color: #d1d5db;
+    color: #374151;
+}
+
+.pricing-header{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pricing-header h2{
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-header p{
+    color:var(--text-light);
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.pricing-card{
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-card h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: var(--text-dark);
+}
+
+.pricing-card span{
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.pricing-card ul{
+    list-style: none;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.pricing-card li{
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.pricing-card i{
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+.popular{
+    transform: scale(1.05);
+    border: 2px solid var(--secondary-color);
+}
+
+.badge{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary-color);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+
+.career{
+    background: whitesmoke;
+    padding: 6rem 1rem;
+}
+
+.career-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.career-image img{
+    max-width: 500px;
+    margin: auto;
+}
+
+.career-content h2{
+    font-size: 2.3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.career-content h2 i{
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+.career-content p{
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+}
+
+.career-content .btn{
+    background: black;
+    color: white;
+    margin-top: 1rem;
+}
+
+.career-content .btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.from-right{
+    transform: translateX(60px);
+}
+
+.from-left{
+    transform: translateX(-60px);
+}
+
+.show.from-right,
+.show.from-left{
+    transform: translateX(0);
+}
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+
+@media(width > 768px){
+    nav{
+        position: fixed;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav-head{
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav-logo a{
+        font-size: 2rem;
+        color: var(--text-dark);
+    }
+
+    .nav-logo a span{
+        padding: 6px 9px;
+        color: var(--white);
+    }
+
+    .nav-menu-btn{
+        display: none;
+    }
+
+    .nav-links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none;
+    }
+
+    .nav-links a{
+        padding-block: 5px;
+        color: var(--text-light);
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover{
+        border-color: var(--secondary-color);
+    }
+
+    .nav-btns{
+        display: flex;
+        flex: 1;
+    }
+
+    .btn{
+        padding: .75rem 2rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        white-space: nowrap;
+        color: var(--text-dark);
+        background-color: var(--tertiary-color);
+        border-radius: 5rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        color: var(--white);
+        background-color: var(--secondary-color);
+    }
+
+    .header-container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .header-img{
+        grid-area: 1/2/2/3;
+    }
+
+    .header-content{
+        text-align: left;
+    }
+}
+
+@media(max-width: 700px){
+    .course-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .career-container{
+        grid-template-columns: 1fr;
+    }
+
+    .header-content h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+
+
