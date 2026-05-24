@@ -97,6 +97,10 @@
             if(check.checked){
                 result.innerHTML = "✅ Verification Successful!";
                 result.style.color = "#22c55e";
+
+                  setTimeout(() => {
+                window.location.href = "Pages/Main/main.html";
+            }, 1000);
             } else {
                 result.innerHTML = "❌ Please confirm first!";
                 result.style.color = "#ef4444";
@@ -106,4 +110,3 @@
 
 </body>
 </html>
-```
