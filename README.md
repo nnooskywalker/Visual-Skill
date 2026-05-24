@@ -22,7 +22,7 @@ validation using JavaScript.
 - CSS
 - JavaScript
 - Visual Studio Code
-# Pages Included
+# 📄 Pages Included
 **1. Home Page**
 - Landing Section
 - Promotional Section
