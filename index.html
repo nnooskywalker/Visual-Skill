@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Human Verification</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#0f172a;
+            font-family:Arial, Helvetica, sans-serif;
+            color:white;
+        }
+
+        .container{
+            background:#1e293b;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            width:350px;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#cbd5e1;
+            margin-bottom:25px;
+        }
+
+        .checkbox-container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:10px;
+            margin-bottom:20px;
+        }
+
+        input[type="checkbox"]{
+            width:20px;
+            height:20px;
+            cursor:pointer;
+        }
+
+        button{
+            padding:12px 25px;
+            border:none;
+            border-radius:10px;
+            background:#3b82f6;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#2563eb;
+        }
+
+        #result{
+            margin-top:20px;
+            font-weight:bold;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Human Verification</h1>
+        <p>Please verify that you are human.</p>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="humanCheck">
+            <label for="humanCheck">I am not a robot</label>
+        </div>
+
+        <button onclick="verifyHuman()">Verify</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function verifyHuman(){
+            const check = document.getElementById("humanCheck");
+            const result = document.getElementById("result");
+
+            if(check.checked){
+                result.innerHTML = "✅ Verification Successful!";
+                result.style.color = "#22c55e";
+            } else {
+                result.innerHTML = "❌ Please confirm first!";
+                result.style.color = "#ef4444";
+            }
+        }
+    </script>
+
+</body>
+</html>
+```
